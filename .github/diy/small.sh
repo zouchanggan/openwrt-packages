@@ -12,7 +12,7 @@ rm -rf ./openwrt-passwall/gn
 #原作者 第1版luci-app-passwall
 git clone https://github.com/xiaorouji/openwrt-passwall ./passwall && mv passwall/luci-app-passwall ./ && rm -rf passwall
 #原作者 第2版luci-app-passwall2
-git clone https://github.com/xiaorouji/openwrt-passwall2 ./passwall2 && mv passwall/luci-app-passwall2 ./ && rm -rf passwall2
+git clone https://github.com/xiaorouji/openwrt-passwall2 ./passwall2 && mv passwall2/luci-app-passwall2 ./ && rm -rf passwall2
 ########################################luci-app-ssr-plus#############################################
 #原作者
 git clone https://github.com/fw876/helloworld ./helloworld && mv helloworld/luci-app-ssr-plus ./ && rm -rf helloworld
