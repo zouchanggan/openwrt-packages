@@ -22,15 +22,22 @@ git clone https://github.com/fw876/helloworld ./helloworld && mv helloworld/luci
 
 ########################################small#############################################
 git clone https://github.com/kenzok8/small ./small 
+mv small/luci-app-homeproxy ./ 
+mv small/luci-app-mihomo ./ 
 mv small/luci-app-mosdns ./ 
 mv small/luci-app-openclash ./ 
 mv small/shadowsocks-rust ./openwrt-passwall 
 mv small/mosdns ./openwrt-passwall 
+mv /small/v2ray-geodata ./openwrt-passwall
+mv /small/chinadns-ng ./openwrt-passwall
+mv /small/v2dat ./openwrt-passwall
+mv /small/lua-neturl ./openwrt-passwall
+mv /small/redsocks2 ./openwrt-passwall
+mv /small/shadow-tls ./openwrt-passwall
+mv /small/gn ./openwrt-passwall
+mv /small/mihomo ./openwrt-passwall
 rm -rf small
 ############################################################################################################################################################
-
-#git clone https://github.com/kenzok8/small ./small && mv small/luci-app-mosdns ./ && mv small/luci-app-openclash ./ && mv small/shadowsocks-rust ./openwrt-passwall && mv small/mosdns ./openwrt-passwall && rm -rf small
-
 
 ########################################luci-app-lucky#############################################
 git clone https://github.com/gdy666/luci-app-lucky ./luci-app-lucky && rm -rf luci-app-lucky/previews
