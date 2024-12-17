@@ -21,10 +21,15 @@ git clone https://github.com/fw876/helloworld ./helloworld && mv helloworld/luci
 
 
 ########################################small#############################################
-git clone https://github.com/kenzok8/small ./small && mv small/shadowsocks-rust ./openwrt-passwall && mv small/luci-app-mosdns ./ && mv small/mosdns ./openwrt-passwall && rm -rf small
+git clone https://github.com/kenzok8/small ./small 
+mv small/luci-app-mosdns ./ 
+mv small/luci-app-openclash ./ 
+mv small/shadowsocks-rust ./openwrt-passwall 
+mv small/mosdns ./openwrt-passwall 
+rm -rf small
 ############################################################################################################################################################
 
-#git clone https://github.com/kenzok8/small ./small && mv helloworld/luci-app-ssr-plus ./ && mv helloworld/shadowsocks-libev ./openwrt-passwall && rm -rf small
+#git clone https://github.com/kenzok8/small ./small && mv small/luci-app-mosdns ./ && mv small/luci-app-openclash ./ && mv small/shadowsocks-rust ./openwrt-passwall && mv small/mosdns ./openwrt-passwall && rm -rf small
 
 
 ########################################luci-app-lucky#############################################
