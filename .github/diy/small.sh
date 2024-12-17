@@ -18,7 +18,9 @@ git clone https://github.com/xiaorouji/openwrt-passwall2 ./passwall2 && mv passw
 git clone https://github.com/fw876/helloworld ./helloworld && mv helloworld/luci-app-ssr-plus ./ && mv helloworld/shadowsocks-libev ./openwrt-passwall && rm -rf helloworld
 ############################################################################################################################################################
 
-
+########################################SSRP#############################################
+git clone https://github.com/zouchanggan/SSRP ./SSRP && mv SSRP/update/v2raya ./openwrt-passwall && mv SSRP/themes//luci-theme-design ./ && rm -rf SSRP
+############################################################################################################################################################
 
 ########################################small#############################################
 git clone https://github.com/kenzok8/small ./small 
