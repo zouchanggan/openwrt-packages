@@ -15,7 +15,8 @@ git clone https://github.com/xiaorouji/openwrt-passwall ./passwall && mv passwal
 git clone https://github.com/xiaorouji/openwrt-passwall2 ./passwall2 && mv passwall2/luci-app-passwall2 ./ && rm -rf passwall2
 ########################################luci-app-ssr-plus#############################################
 #原作者
-git clone https://github.com/fw876/helloworld ./helloworld && mv helloworld/luci-app-ssr-plus ./ && rm -rf helloworld
+git clone https://github.com/fw876/helloworld ./helloworld && mv helloworld/luci-app-ssr-plus ./ && mv helloworld/shadowsocks-libev
+ ./openwrt-passwall  && rm -rf helloworld
 ############################################################################################################################################################
 
 ########################################luci-app-lucky#############################################
