@@ -18,6 +18,15 @@ git clone https://github.com/xiaorouji/openwrt-passwall2 ./passwall2 && mv passw
 git clone https://github.com/fw876/helloworld ./helloworld && mv helloworld/luci-app-ssr-plus ./ && mv helloworld/shadowsocks-libev ./openwrt-passwall && rm -rf helloworld
 ############################################################################################################################################################
 
+
+
+########################################small#############################################
+git clone https://github.com/kenzok8/small ./small && mv small/shadowsocks-rust ./openwrt-passwall && mv small/luci-app-mosdns ./ && mv small/mosdns ./openwrt-passwall && rm -rf small
+############################################################################################################################################################
+
+#git clone https://github.com/kenzok8/small ./small && mv helloworld/luci-app-ssr-plus ./ && mv helloworld/shadowsocks-libev ./openwrt-passwall && rm -rf small
+
+
 ########################################luci-app-lucky#############################################
 git clone https://github.com/gdy666/luci-app-lucky ./luci-app-lucky && rm -rf luci-app-lucky/previews
 ############################################################################################################################################################
