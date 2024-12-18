@@ -18,7 +18,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        target: [lede]
+        target: [immortalwrt]
         
     steps:
     - name: Checkout
