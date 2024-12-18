@@ -13,12 +13,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    
     name: Update ${{matrix.target}}
     strategy:
       fail-fast: false
       matrix:
-        target: [immortalwrt]
+        target: [lede]
         
     steps:
     - name: Checkout
@@ -41,7 +41,7 @@ jobs:
         rm -rf * >/dev/null 2>&1
         $GITHUB_WORKSPACE/.github/diy/${{matrix.target}}.sh
         $GITHUB_WORKSPACE/.github/diy/convert_translation.sh
-      
+        
     - name: Upload
       env: 
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
