@@ -7,7 +7,7 @@ on:
     paths:
       - '.github/diy/immortalwrt.sh'
   schedule:
-  #  - cron: 0 */12 * * *
+    - cron: 0 */12 * * *
   workflow_dispatch:
 
 jobs:
@@ -35,7 +35,7 @@ jobs:
         cd $GITHUB_WORKSPACE
         chmod +x .github/diy/${{matrix.target}}.sh
         chmod +x .github/diy/convert_translation.sh
-        git clone -b ${{matrix.target}} https://github.com/moruiris/openwrt-packages.git ${{matrix.target}}
+        git clone -b ${{matrix.target}} https://github.com/zouchanggan/openwrt-packages.git ${{matrix.target}}
         cd ${{matrix.target}}
         git rm -r --cache * >/dev/null 2>&1 &
         rm -rf * >/dev/null 2>&1
@@ -49,4 +49,4 @@ jobs:
         cd $GITHUB_WORKSPACE/${{matrix.target}}
         git add .
         git commit -am "update $(date +%Y-%m-%d" "%H:%M:%S)"
-        git push --quiet "https://${{ secrets.ACCESS_TOKEN }}@github.com/moruiris/openwrt-packages.git" HEAD:${{matrix.target}}
+        git push --quiet "https://${{ secrets.ACCESS_TOKEN }}@github.com/zouchanggan/openwrt-packages.git" HEAD:${{matrix.target}}
