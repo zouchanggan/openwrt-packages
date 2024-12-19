@@ -4,11 +4,12 @@ mv -n `find $1/* -maxdepth 0 -type d` ./
 rm -rf $1
 }
 ########################################luci-app-passwall#############################################
-git clone https://github.com/xiaorouji/openwrt-passwall-packages ./
-rm -rf ./shadowsocks-rust
-rm -rf ./v2ray-geodata
-rm -rf ./chinadns-ng
-rm -rf ./gn
+git clone https://github.com/xiaorouji/openwrt-passwall-packages ./openwrt-passwall
+rm -rf ./openwrt-passwall/shadowsocks-rust
+rm -rf ./openwrt-passwall/v2ray-geodata
+rm -rf ./openwrt-passwall/chinadns-ng
+rm -rf ./openwrt-passwall/gn
+cp -r openwrt-passwall/* ./ && rm -rf ./openwrt-passwall
 #原作者 第1版luci-app-passwall
 git clone https://github.com/xiaorouji/openwrt-passwall ./passwall && mv passwall/luci-app-passwall ./ && rm -rf passwall
 #原作者 第2版luci-app-passwall2
