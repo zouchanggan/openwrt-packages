@@ -30,14 +30,14 @@ mv small/luci-app-mosdns ./
 mv small/luci-app-openclash ./ 
 mv small/shadowsocks-rust ./openwrt-passwall 
 mv small/mosdns ./openwrt-passwall 
-mv /small/v2ray-geodata ./openwrt-passwall
-mv /small/chinadns-ng ./openwrt-passwall
-mv /small/v2dat ./openwrt-passwall
-mv /small/lua-neturl ./openwrt-passwall
-mv /small/redsocks2 ./openwrt-passwall
-mv /small/shadow-tls ./openwrt-passwall
-mv /small/gn ./openwrt-passwall
-mv /small/mihomo ./openwrt-passwall
+mv small/v2ray-geodata ./openwrt-passwall
+mv small/chinadns-ng ./openwrt-passwall
+mv small/v2dat ./openwrt-passwall
+mv small/lua-neturl ./openwrt-passwall
+mv small/redsocks2 ./openwrt-passwall
+mv small/shadow-tls ./openwrt-passwall
+mv small/gn ./openwrt-passwall
+mv small/mihomo ./openwrt-passwall
 rm -rf small
 ############################################################################################################################################################
 
