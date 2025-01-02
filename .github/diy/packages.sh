@@ -48,7 +48,7 @@ git clone https://github.com/fw876/helloworld ./openwrt-ssr-plus && mv openwrt-s
 #二次修改
 git clone -b luci https://github.com/moruiris/openwrt-chinadns-ng ./luci-app-chinadns-ng
 #passwall内置了chinadns-ng，就不用这个重复了
-#git clone https://github.com/moruiris/openwrt-chinadns-ng
+# git clone https://github.com/moruiris/openwrt-chinadns-ng
 ############################################################################################################################################################
 #################################################主题########################################################################################################
 ########################################luci-app-argon#############################################
