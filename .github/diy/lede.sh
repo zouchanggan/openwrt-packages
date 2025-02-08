@@ -60,7 +60,7 @@ git clone https://github.com/sirpdboy/luci-app-autotimeset ./luci-app-autotimese
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git ./luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git ./luci-app-argon-config
 ########################################luci-theme-design#############################################
-git clone https://github.com/gngpp/luci-theme-design.git ./luci-theme-design
+git clone  --depth=1 -b https://github.com/gngpp/luci-theme-design.git ./luci-theme-design
 git clone https://github.com/gngpp/luci-app-design-config.git ./luci-app-design-config
 ####################################################################################
 
