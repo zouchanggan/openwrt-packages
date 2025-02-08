@@ -62,7 +62,7 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git ./luci
 ####################################################################################
 
 ########################################luci-theme-design#############################################
-git clone -b main https://github.com/0x676e67/luci-theme-design.git ./luci-theme-design
+git clone https://github.com/gngpp/luci-theme-design.git ./luci-theme-design
 git clone https://github.com/0x676e67/luci-app-design-config.git ./luci-app-design-config
 ####################################################################################
 
