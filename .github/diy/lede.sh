@@ -51,11 +51,17 @@ git clone https://github.com/gdy666/luci-app-lucky ./luci-app-lucky && rm -rf lu
 git clone https://github.com/destan19/OpenAppFilter ./luci-app-oaf
 ############################################################################################################################################################
 
+########################################luci-app-autotimeset#############################################
+git clone https://github.com/sirpdboy/luci-app-autotimeset ./luci-app-autotimeset
+############################################################################################################################################################
+
 #################################################主题########################################################################################################
 ########################################luci-app-argon#############################################
-#原作者
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
-git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config
+git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git
+########################################luci-theme-design#############################################
+git clone https://github.com/0x676e67/luci-theme-design.git
+git clone https://github.com/0x676e67/luci-app-design-config.git
 ####################################################################################
 
 
