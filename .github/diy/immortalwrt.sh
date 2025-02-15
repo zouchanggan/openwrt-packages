@@ -51,6 +51,13 @@ git clone https://github.com/gdy666/luci-app-lucky ./luci-app-lucky && rm -rf lu
 git clone https://github.com/destan19/OpenAppFilter ./luci-app-oaf
 ############################################################################################################################################################
 
+########################################AdGuardHome#############################################
+git clone https://github.com/kenzok8/openwrt-packages.git ./openwrt-packages
+mv openwrt-packages/adguardhome ./
+mv openwrt-packages/luci-app-adguardhome ./
+rm -rf openwrt-packages
+############################################################################################################################################################
+
 ########################################luci-app-autotimeset#############################################
 git clone https://github.com/sirpdboy/luci-app-autotimeset ./luci-app-autotimeset
 ############################################################################################################################################################
