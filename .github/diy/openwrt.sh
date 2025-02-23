@@ -16,13 +16,12 @@ git clone https://github.com/xiaorouji/openwrt-passwall ./passwall && mv passwal
 git clone https://github.com/xiaorouji/openwrt-passwall2 ./passwall2 && mv passwall2/luci-app-passwall2 ./ && rm -rf passwall2
 ########################################luci-app-ssr-plus#############################################
 #原作者
-git clone https://github.com/fw876/helloworld && mv helloworld/luci-app-ssr-plus ./ && mv helloworld/shadowsocks-libev ./
-rm -rf helloworld
+git clone https://github.com/fw876/helloworld && mv helloworld/luci-app-ssr-plus ./ && mv helloworld/shadowsocks-libev ./ && rm -rf helloworld
 ############################################################################################################################################################
 
 ########################################SSRP#############################################
-# git clone https://github.com/zouchanggan/SSRP ./SSRP && mv SSRP/update/v2raya ./ && mv SSRP/themes/luci-theme-design ./ && rm -rf SSRP
-git clone https://github.com/zouchanggan/SSRP ./SSRP && mv SSRP/update/v2raya ./ && rm -rf SSRP
+git clone https://github.com/zouchanggan/SSRP ./SSRP && mv SSRP/update/v2raya ./ && mv SSRP/themes/luci-theme-design ./ && rm -rf SSRP
+# git clone https://github.com/zouchanggan/SSRP ./SSRP && mv SSRP/update/v2raya ./ && rm -rf SSRP
 ############################################################################################################################################################
 
 ########################################small#############################################
@@ -69,7 +68,7 @@ git clone https://github.com/sirpdboy/luci-app-autotimeset ./luci-app-autotimese
 git clone https://github.com/jerrykuku/luci-theme-argon.git ./luci-theme-argon
 git clone https://github.com/jerrykuku/luci-app-argon-config.git ./luci-app-argon-config
 ########################################luci-theme-design#############################################
-git clone https://github.com/gngpp/luci-theme-design.git ./luci-theme-design
+# git clone https://github.com/gngpp/luci-theme-design.git ./luci-theme-design
 git clone https://github.com/gngpp/luci-app-design-config.git ./luci-app-design-config
 ####################################################################################
 
