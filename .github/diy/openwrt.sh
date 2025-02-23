@@ -21,8 +21,8 @@ rm -rf helloworld
 ############################################################################################################################################################
 
 ########################################SSRP#############################################
-git clone https://github.com/zouchanggan/SSRP ./SSRP && mv SSRP/update/v2raya ./ && mv SSRP/themes/luci-theme-design ./ && rm -rf SSRP
-# git clone https://github.com/zouchanggan/SSRP ./SSRP && mv SSRP/update/v2raya ./ && rm -rf SSRP
+# git clone https://github.com/zouchanggan/SSRP ./SSRP && mv SSRP/update/v2raya ./ && mv SSRP/themes/luci-theme-design ./ && rm -rf SSRP
+git clone https://github.com/zouchanggan/SSRP ./SSRP && mv SSRP/update/v2raya ./ && rm -rf SSRP
 ############################################################################################################################################################
 
 ########################################small#############################################
@@ -45,7 +45,8 @@ rm -rf small
 ############################################################################################################################################################
 
 ########################################luci-app-lucky#############################################
-git clone https://github.com/gdy666/luci-app-lucky ./luci-app-lucky && rm -rf luci-app-lucky/previews
+git clone https://github.com/gdy666/luci-app-lucky ./luci-app-lucky && rm -rf luci-app-lucky/previews && rm -rf luci-app-lucky/luci-app-lucky
+git clone https://github.com/zouchanggan/luci-app-lucky ./lucky && mv lucky/luci-app-lucky ./luci-app-lucky && rm -rf lucky
 ############################################################################################################################################################
 
 ########################################AdGuardHome#############################################
@@ -68,7 +69,7 @@ git clone https://github.com/sirpdboy/luci-app-autotimeset ./luci-app-autotimese
 git clone https://github.com/jerrykuku/luci-theme-argon.git ./luci-theme-argon
 git clone https://github.com/jerrykuku/luci-app-argon-config.git ./luci-app-argon-config
 ########################################luci-theme-design#############################################
-# git clone https://github.com/gngpp/luci-theme-design.git ./luci-theme-design
+git clone https://github.com/gngpp/luci-theme-design.git ./luci-theme-design
 git clone https://github.com/gngpp/luci-app-design-config.git ./luci-app-design-config
 ####################################################################################
 
