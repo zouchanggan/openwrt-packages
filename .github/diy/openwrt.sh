@@ -50,10 +50,10 @@ git clone https://github.com/zouchanggan/luci-app-lucky ./lucky && mv lucky/luci
 ############################################################################################################################################################
 
 ########################################AdGuardHome#############################################
-git clone https://github.com/kenzok8/openwrt-packages.git ./openwrt-packages
-mv openwrt-packages/adguardhome ./
-mv openwrt-packages/luci-app-adguardhome ./
-rm -rf openwrt-packages
+# git clone https://github.com/kenzok8/openwrt-packages.git ./openwrt-packages
+# mv openwrt-packages/adguardhome ./
+# mv openwrt-packages/luci-app-adguardhome ./
+# rm -rf openwrt-packages
 ############################################################################################################################################################
 
 ########################################luci-app-oaf#############################################
