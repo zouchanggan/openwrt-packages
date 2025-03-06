@@ -47,10 +47,10 @@ rm -rf small
 git clone https://github.com/gdy666/luci-app-lucky ./luci-app-lucky && rm -rf luci-app-lucky/previews
 ############################################################################################################################################################
 
-########################################AdGuardHome#############################################
+########################################AdGuardHome&smartdns#############################################
 git clone https://github.com/kenzok8/openwrt-packages.git ./openwrt-packages
-mv openwrt-packages/adguardhome ./
-mv openwrt-packages/luci-app-adguardhome ./
+mv openwrt-packages/adguardhome ./ && mv openwrt-packages/smartdns ./
+mv openwrt-packages/luci-app-adguardhome ./ && mv openwrt-packages/luci-app-smartdns ./
 rm -rf openwrt-packages
 ############################################################################################################################################################
 
