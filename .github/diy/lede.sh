@@ -8,6 +8,7 @@ git clone https://github.com/xiaorouji/openwrt-passwall-packages ./openwrt-passw
 rm -rf ./openwrt-passwall/shadowsocks-rust
 rm -rf ./openwrt-passwall/v2ray-geodata
 rm -rf ./openwrt-passwall/chinadns-ng
+rm -rf ./openwrt-passwall/ipt2socks
 rm -rf ./openwrt-passwall/gn
 cp -r openwrt-passwall/* ./ && rm -rf ./openwrt-passwall
 #原作者 第1版luci-app-passwall
@@ -40,6 +41,7 @@ mv small/redsocks2 ./
 mv small/shadow-tls ./
 mv small/gn ./
 mv small/mihomo ./
+mv small/ipt2socks ./
 rm -rf small
 ############################################################################################################################################################
 
