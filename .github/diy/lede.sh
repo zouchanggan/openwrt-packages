@@ -31,6 +31,7 @@ mv small/luci-app-homeproxy ./
 mv small/luci-app-mihomo ./ 
 mv small/luci-app-mosdns ./ 
 mv small/luci-app-openclash ./ 
+mv small/luci-app-fchomo ./
 mv small/shadowsocks-rust ./
 mv small/mosdns ./ 
 mv small/v2ray-geodata ./
