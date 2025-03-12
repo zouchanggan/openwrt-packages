@@ -27,12 +27,9 @@ git clone https://github.com/zouchanggan/SSRP ./SSRP && mv SSRP/update/v2raya ./
 
 ########################################small#############################################
 git clone https://github.com/kenzok8/small ./small 
-mv small/luci-app-homeproxy ./ 
-mv small/luci-app-mihomo ./ 
 mv small/luci-app-mosdns ./ 
 mv small/luci-app-openclash ./ 
 mv small/luci-app-fchomo ./
-mv small/luci-app-nikki ./
 mv small/shadowsocks-rust ./
 mv small/mosdns ./ 
 mv small/v2ray-geodata ./
@@ -43,7 +40,6 @@ mv small/redsocks2 ./
 mv small/shadow-tls ./
 mv small/gn ./
 mv small/mihomo ./
-mv small/nikki ./
 mv small/ipt2socks ./
 rm -rf small
 ############################################################################################################################################################
