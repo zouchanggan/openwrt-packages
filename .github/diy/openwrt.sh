@@ -28,7 +28,7 @@ git clone https://github.com/zouchanggan/SSRP ./SSRP && mv SSRP/update/v2raya ./
 
 ########################################small#############################################
 git clone https://github.com/kenzok8/small ./small 
-mv small/luci-app-homeproxy ./ 
+# mv small/luci-app-homeproxy ./ 
 mv small/luci-app-mihomo ./ 
 mv small/luci-app-mosdns ./ 
 mv small/luci-app-openclash ./ 
