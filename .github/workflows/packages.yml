@@ -47,7 +47,6 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       run: |
         cd $GITHUB_WORKSPACE/${{matrix.target}}
-        cp $GITHUB_WORKSPACE/LICENSE $GITHUB_WORKSPACE/${{matrix.target}}
           git add .
           git commit -am "update $(date '+%Y-%m-%d %H:%M:%S')"
           git push --quiet "https://${{ secrets.ACCESS_TOKEN }}@github.com/zouchanggan/openwrt-packages.git" HEAD:${{matrix.target}}
