@@ -2,24 +2,29 @@ name: Merge-upstream-small
 
 on:
   push:
-    branches:
-      - main
     paths:
       - '.github/diy/small.sh'
   schedule:
     - cron: 0 */12 * * *
+  repository_dispatch:
   workflow_dispatch:
+    inputs:
+      packages:
+        description: 'packages'
+        required: false
+        default: 'false'	
 
 jobs:
   build:
+    if: github.event.repository.owner.id == github.event.sender.id || ! github.event.sender.id
     runs-on: ubuntu-latest
-    
+
     name: Update ${{matrix.target}}
     strategy:
       fail-fast: false
       matrix:
         target: [small]
-        
+
     steps:
     - name: Checkout
       uses: actions/checkout@main
@@ -36,14 +41,13 @@ jobs:
       run: |
         cd $GITHUB_WORKSPACE
         chmod +x .github/diy/${{matrix.target}}.sh
-        chmod +x .github/diy/convert_translation.sh
         git clone -b ${{matrix.target}} https://github.com/zouchanggan/openwrt-packages.git ${{matrix.target}}
         cd ${{matrix.target}}
         git rm -r --cache * >/dev/null 2>&1 &
-        rm -rf * >/dev/null 2>&1
+        rm -rf `find ./* -maxdepth 0 -type d ! -name "diy"` >/dev/null 2>&1
         $GITHUB_WORKSPACE/.github/diy/${{matrix.target}}.sh
         $GITHUB_WORKSPACE/.github/diy/convert_translation.sh
-        
+
     - name: Upload
       env: 
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
@@ -63,3 +67,13 @@ jobs:
           echo "nothing to commit"
           exit 0
         fi || exit 0
+
+    - name: Delete workflow runs
+      uses: Mattraks/delete-workflow-runs@main
+      with:
+        token: ${{ github.token }}
+        repository: ${{ github.repository }}
+        retain_days: 1
+        keep_minimum_runs: 1
+
+ 
