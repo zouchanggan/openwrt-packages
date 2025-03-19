@@ -10,9 +10,6 @@ on:
     - cron: 0 */12 * * *
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -31,7 +28,6 @@ jobs:
       run : |
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --global user.name "github-actions[bot]"
-        git config --global user.password '${{ secrets.ACCESS_TOKEN }}'
         sudo timedatectl set-timezone "Asia/Shanghai"
         
     - name: Clone packages
@@ -56,4 +52,4 @@ jobs:
         cd $GITHUB_WORKSPACE/${{matrix.target}}
           git add .
           git commit -am "update $(date '+%Y-%m-%d %H:%M:%S')"
-          git push --quiet "https://${{ secrets.ACCESS_TOKEN }}@github.com/zouchanggan/openwrt-packages.git" HEAD:${{matrix.target}}
+          git remote add origin "https://${{ secrets.ACCESS_TOKEN }}@github.com/zouchanggan/openwrt-packages.git" HEAD:${{matrix.target}}
