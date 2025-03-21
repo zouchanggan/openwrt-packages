@@ -7,6 +7,8 @@ rm -rf $1
 git clone https://github.com/xiaorouji/openwrt-passwall-packages ./openwrt-passwall
 rm -rf ./openwrt-passwall/shadowsocks-rust
 rm -rf ./openwrt-passwall/v2ray-geodata
+rm -rf ./openwrt-passwall/v2ray-core
+rm -rf ./openwrt-passwall/trojan
 rm -rf ./openwrt-passwall/chinadns-ng
 rm -rf ./openwrt-passwall/ipt2socks
 rm -rf ./openwrt-passwall/gn
@@ -30,6 +32,8 @@ git clone https://github.com/kenzok8/small ./small
 mv small/luci-app-mosdns ./ 
 mv small/luci-app-openclash ./ 
 mv small/luci-app-fchomo ./
+mv small/luci-app-nikki ./
+mv small/luci-app-homeproxy ./
 mv small/shadowsocks-rust ./
 mv small/mosdns ./ 
 mv small/v2ray-geodata ./
@@ -41,6 +45,8 @@ mv small/shadow-tls ./
 mv small/gn ./
 mv small/mihomo ./
 mv small/ipt2socks ./
+mv small/v2ray-core ./
+mv small/trojan ./
 rm -rf small
 ############################################################################################################################################################
 
