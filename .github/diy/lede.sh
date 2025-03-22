@@ -78,6 +78,10 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git ./luci
 git clone https://github.com/gngpp/luci-theme-design.git ./luci-theme-design
 git clone https://github.com/gngpp/luci-app-design-config.git ./luci-app-design-config
 ####################################################################################
+########################################luci-theme-kucat#############################################
+git clone -b js https://github.com/sirpdboy/luci-theme-kucat.git ./luci-theme-kucat
+git clone https://github.com/sirpdboy/luci-app-kucat-config.git ./luci-app-kucat-config
+####################################################################################
 
 
 rm -rf ./*/.git & rm -f ./*/.gitattributes
