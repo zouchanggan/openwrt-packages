@@ -40,6 +40,8 @@ mv small/redsocks2 ./
 mv small/shadow-tls ./
 mv small/gn ./
 mv small/ipt2socks ./
+mv small/v2ray-core ./
+mv small/trojan ./
 rm -rf small
 ############################################################################################################################################################
 
