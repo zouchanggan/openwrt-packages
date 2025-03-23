@@ -30,15 +30,32 @@ rm -rf small
 git clone https://github.com/gdy666/luci-app-lucky ./luci-app-lucky && rm -rf luci-app-lucky/previews
 ############################################################################################################################################################
 
+########################################AdGuardHome&smartdns#############################################
+git clone https://github.com/kenzok8/openwrt-packages.git ./openwrt-packages
+mv openwrt-packages/adguardhome ./ && mv openwrt-packages/smartdns ./
+mv openwrt-packages/luci-app-adguardhome ./ && mv openwrt-packages/luci-app-smartdns ./
+rm -rf openwrt-packages
+############################################################################################################################################################
+
 ########################################luci-app-oaf#############################################
 git clone https://github.com/destan19/OpenAppFilter ./luci-app-oaf
 ############################################################################################################################################################
 
+########################################luci-app-autotimeset#############################################
+git clone https://github.com/sirpdboy/luci-app-autotimeset ./luci-app-autotimeset
+############################################################################################################################################################
+
 #################################################主题########################################################################################################
 ########################################luci-app-argon#############################################
-#原作者
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
-git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git ./luci-theme-argon
+git clone -b 18.06 https://github.com/jerrykuku/luci-app-argon-config.git ./luci-app-argon-config
+########################################luci-theme-design#############################################
+git clone https://github.com/gngpp/luci-theme-design.git ./luci-theme-design
+git clone https://github.com/gngpp/luci-app-design-config.git ./luci-app-design-config
+####################################################################################
+########################################luci-theme-kucat#############################################
+git clone -b js https://github.com/sirpdboy/luci-theme-kucat.git ./luci-theme-kucat
+git clone https://github.com/sirpdboy/luci-app-kucat-config.git ./luci-app-kucat-config
 ####################################################################################
 
 
