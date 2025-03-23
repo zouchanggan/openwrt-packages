@@ -4,11 +4,10 @@ mv -n `find $1/* -maxdepth 0 -type d` ./
 rm -rf $1
 }
 ########################################luci-app-passwall#############################################
-git clone https://github.com/xiaorouji/openwrt-passwall-packages ./openwrt-passwall
-rm -rf ./openwrt-passwall/shadowsocks-rust
-rm -rf ./openwrt-passwall/v2ray-geodata
-rm -rf ./openwrt-passwall/chinadns-ng
-rm -rf ./openwrt-passwall/gn
+git clone https://github.com/sbwml/openwrt_helloworld.git ./openwrt-passwall
+rm -rf ./openwrt-passwall/luci-app-passwall
+rm -rf ./openwrt-passwall/luci-app-passwall2
+rm -rf ./openwrt-passwall/luci-app-ssr-plus
 cp -r openwrt-passwall/* ./ && rm -rf ./openwrt-passwall
 #原作者 第1版luci-app-passwall
 git clone https://github.com/xiaorouji/openwrt-passwall ./passwall && mv passwall/luci-app-passwall ./ && rm -rf passwall
@@ -16,30 +15,14 @@ git clone https://github.com/xiaorouji/openwrt-passwall ./passwall && mv passwal
 git clone https://github.com/xiaorouji/openwrt-passwall2 ./passwall2 && mv passwall2/luci-app-passwall2 ./ && rm -rf passwall2
 ########################################luci-app-ssr-plus#############################################
 #原作者
-git clone https://github.com/fw876/helloworld && mv helloworld/luci-app-ssr-plus ./ && mv helloworld/shadowsocks-libev ./
+git clone https://github.com/fw876/helloworld && mv helloworld/luci-app-ssr-plus ./ && rm -rf helloworld
 rm -rf helloworld
-############################################################################################################################################################
-
-########################################SSRP#############################################
-git clone https://github.com/zouchanggan/SSRP ./SSRP && mv SSRP/update/v2raya ./ && mv SSRP/themes//luci-theme-design ./ && rm -rf SSRP
 ############################################################################################################################################################
 
 ########################################small#############################################
 git clone https://github.com/kenzok8/small ./small 
-mv small/luci-app-homeproxy ./ 
-mv small/luci-app-mihomo ./ 
 mv small/luci-app-mosdns ./ 
-mv small/luci-app-openclash ./ 
-mv small/shadowsocks-rust ./
 mv small/mosdns ./ 
-mv small/v2ray-geodata ./
-mv small/chinadns-ng ./
-mv small/v2dat ./
-mv small/lua-neturl ./
-mv small/redsocks2 ./
-mv small/shadow-tls ./
-mv small/gn ./
-mv small/mihomo ./
 rm -rf small
 ############################################################################################################################################################
 
