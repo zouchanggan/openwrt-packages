@@ -1,5 +1,3 @@
-# SPDX-License-Identifier: GPL-2.0-only
-
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=chinadns-ng
@@ -32,9 +30,15 @@ else ifeq ($(ARCH),mipsel)
 else ifeq ($(ARCH),mips64)
   PKG_ARCH:=chinadns-ng+wolfssl@mips64-linux-musl@mips64+soft_float@fast+lto
   PKG_HASH:=b79090caee28ce266829ae82edb97ac18c65c6c570625912533d46753def0515
+else ifeq ($(ARCH),mips64el)
+  PKG_ARCH:=chinadns-ng+wolfssl@mips64el-linux-musl@mips64+soft_float@fast+lto
+  PKG_HASH:=bafed35c8e081d8781651180bd3929542704e098ef5fbcf92a6aa7a75e5498b0
 else ifeq ($(ARCH),i386)
   PKG_ARCH:=chinadns-ng+wolfssl@i386-linux-musl@i686@fast+lto
   PKG_HASH:=1149d9fdcf0ca798c63624e62e6c76314aa7b0940e782cc0d064e618772c4b22
+else ifeq ($(ARCH),riscv64)
+  PKG_ARCH:=chinadns-ng+wolfssl@riscv64-linux-musl@baseline_rv64@fast+lto
+  PKG_HASH:=202eeb3f9a9a404defdc10b55ace25f4b2cbc82ff80d3cdf5f7274aa0c804213
 else ifeq ($(ARCH),x86_64)
   PKG_ARCH:=chinadns-ng+wolfssl@x86_64-linux-musl@x86_64@fast+lto
   PKG_HASH:=4b9548191b856690182f98b721512b9a50004986ecebf6eeed71cb709acbd1f5
@@ -42,7 +46,7 @@ else
   PKG_HASH:=dummy
 endif
 
-PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_ARCH)
+PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(ARCH_PACKAGES)
 PKG_SOURCE_URL:=https://github.com/zfl9/chinadns-ng/releases/download/$(PKG_VERSION)/$(PKG_ARCH)?
 UNPACK_CMD=$(CP) $(DL_DIR)/$(PKG_SOURCE) $(PKG_BUILD_DIR)/$(PKG_NAME)
 
@@ -58,7 +62,7 @@ define Package/chinadns-ng
   SUBMENU:=IP Addresses and Names
   TITLE:=ChinaDNS next generation, refactoring with epoll and ipset.
   URL:=https://github.com/zfl9/chinadns-ng
-  DEPENDS:=@(aarch64||arm||i386||mips||mipsel||mips64||x86_64) +ipset
+  DEPENDS:=@(aarch64||arm||i386||mips||mipsel||mips64||mips64el||riscv64||x86_64) +ipset
 endef
 
 define Build/Compile
