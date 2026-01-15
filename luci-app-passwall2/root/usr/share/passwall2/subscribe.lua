@@ -1541,7 +1541,7 @@ local function curl(url, file, ua, mode)
 		"-skL", "-w %{http_code}", "--retry 3", "--connect-timeout 3"
 	}
 	if ua and ua ~= "" and ua ~= "curl" then
-		ua = (ua == "passwall") and ("passwall/" .. api.get_version()) or ua
+		ua = (ua == "passwall2") and ("passwall2/" .. api.get_version()) or ua
 		curl_args[#curl_args + 1] = '--user-agent "' .. ua .. '"'
 	end
 	curl_args[#curl_args + 1] = get_headers()
